@@ -4,6 +4,12 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <Configurations>Debug;Release</Configurations>
         <Platforms>AnyCPU</Platforms>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>2.5.0</PackageVersion>
+        <Authors>Manuel Huber</Authors>
+        <PackageProjectUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/</PackageProjectUrl>
+        <Title>Eto.DsBindComboBoxCell</Title>
+        <PackageLicenseUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/blob/master/LICENSE</PackageLicenseUrl>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <DebugType>full</DebugType>

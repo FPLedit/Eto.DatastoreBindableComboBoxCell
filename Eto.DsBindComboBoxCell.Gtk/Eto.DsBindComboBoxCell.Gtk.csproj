@@ -5,6 +5,12 @@
     <RootNamespace>Eto.DsBindComboBoxCell.Gtk</RootNamespace>
     <Configurations>Debug;Release</Configurations>
     <Platforms>AnyCPU</Platforms>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageVersion>2.5.0</PackageVersion>
+    <Title>Eto.DsBindComboBoxCell.Gtk</Title>
+    <Authors>Manuel Huber</Authors>
+    <PackageProjectUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
