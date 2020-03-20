@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Eto.DsBindComboBoxCell.Gtk</RootNamespace>
+    <Configurations>Debug;Release</Configurations>
+    <Platforms>AnyCPU</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Eto.Forms" Version="2.5.0" />
+    <PackageReference Include="Eto.Platform.Gtk" Version="2.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eto.DsBindComboBoxCell\Eto.DsBindComboBoxCell.csproj" />
+  </ItemGroup>
+
+</Project>
