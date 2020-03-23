@@ -7,7 +7,7 @@
     <Title>Eto.DsBindComboBoxCell.Wpf</Title>
     <Authors>Manuel Huber</Authors>
     <PackageProjectUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/</PackageProjectUrl>
-    <PackageVersion>2.5.0</PackageVersion>
+    <PackageVersion>2.5.1-ci-20200323.6</PackageVersion>
     <PackageLicenseUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -25,7 +25,7 @@
     <ProjectReference Include="..\Eto.DsBindComboBoxCell\Eto.DsBindComboBoxCell.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Eto.Forms" Version="2.5.0" />
-    <PackageReference Include="Eto.Platform.Wpf" Version="2.5.0" />
+    <PackageReference Include="Eto.Forms" Version="2.5.1-ci-20200323.6" />
+    <PackageReference Include="Eto.Platform.Wpf" Version="2.5.1-ci-20200323.6" />
   </ItemGroup>
 </Project>

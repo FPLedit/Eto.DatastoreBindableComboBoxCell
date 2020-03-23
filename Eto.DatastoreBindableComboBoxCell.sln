@@ -6,6 +6,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.DsBindComboBoxCell.Gtk"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.DsBindComboBoxCell.Wpf", "Eto.DsBindComboBoxCell.Wpf\Eto.DsBindComboBoxCell.Wpf.csproj", "{31A934E6-51C8-4CDB-B671-D76049C956A8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build_scripts", "build_scripts", "{68846F58-14FC-4347-957F-926A2E55A277}"
+ProjectSection(SolutionItems) = preProject
+	build_scripts\FPLedit.ruleset = build_scripts\FPLedit.ruleset
+	build_scripts\ResourceHelper.cs = build_scripts\ResourceHelper.cs
+	build_scripts\VersionInfo.cs = build_scripts\VersionInfo.cs
+	Directory.Build.props = Directory.Build.props
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

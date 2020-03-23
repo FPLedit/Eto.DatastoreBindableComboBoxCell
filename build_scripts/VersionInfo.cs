@@ -29,12 +29,12 @@ internal static class Vi
      * FOR EVERY RELEASE: Increment the following version entries
      * The rest ist updated automatically
      */
-    private const string Major = "2", Minor = "5", Patch = "0";
+    private const string Major = "2", Minor = "5", Patch = "1", Addition = "-ci-20200323.4";
 
     /*
      * It shouldn't be necessary to update the following entries.
      */
-    public const string InformationalVersion = Major + "." + Minor + "." + Patch;
+    public const string InformationalVersion = Major + "." + Minor + "." + Patch + Addition;
 
     public const string FileVersion = InformationalVersion + ".0";
 }
