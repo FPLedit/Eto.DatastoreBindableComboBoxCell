@@ -2,13 +2,7 @@
   <PropertyGroup>
     <ProjectGuid>{31A934E6-51C8-4CDB-B671-D76049C956A8}</ProjectGuid>
     <TargetFramework>net461</TargetFramework>
-    <RootNamespace>Eto.DsBindComboBoxCell.Wpf</RootNamespace>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Title>Eto.DsBindComboBoxCell.Wpf</Title>
-    <Authors>Manuel Huber</Authors>
-    <PackageProjectUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/</PackageProjectUrl>
-    <PackageVersion>2.5.1-ci-20200323.6</PackageVersion>
-    <PackageLicenseUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/blob/master/LICENSE</PackageLicenseUrl>
+    <RootNamespace>Eto.DsBindComboBoxCell.Wpf</RootNamespace>    
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -25,7 +19,7 @@
     <ProjectReference Include="..\Eto.DsBindComboBoxCell\Eto.DsBindComboBoxCell.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Eto.Forms" Version="2.5.1-ci-20200323.6" />
-    <PackageReference Include="Eto.Platform.Wpf" Version="2.5.1-ci-20200323.6" />
+    <PackageReference Include="Eto.Forms" Version="$(EtoVersion)" />
+    <PackageReference Include="Eto.Platform.Wpf" Version="$(EtoVersion)" />
   </ItemGroup>
 </Project>

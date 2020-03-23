@@ -3,13 +3,7 @@
         <ProjectGuid>{08482F0A-70E8-4869-B27E-14A3280684BD}</ProjectGuid>
         <TargetFramework>netstandard2.0</TargetFramework>
         <Configurations>Debug;Release</Configurations>
-        <Platforms>AnyCPU</Platforms>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>2.5.1-ci-20200323.6</PackageVersion>
-        <Authors>Manuel Huber</Authors>
-        <PackageProjectUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/</PackageProjectUrl>
-        <Title>Eto.DsBindComboBoxCell</Title>
-        <PackageLicenseUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/blob/master/LICENSE</PackageLicenseUrl>
+        <Platforms>AnyCPU</Platforms>       
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <DebugType>full</DebugType>
@@ -18,6 +12,6 @@
         <DebugType>pdbonly</DebugType>
     </PropertyGroup>
     <ItemGroup>
-      <PackageReference Include="Eto.Forms" Version="2.5.1-ci-20200323.6" />
+      <PackageReference Include="Eto.Forms" Version="$(EtoVersion)" />
     </ItemGroup>
 </Project>

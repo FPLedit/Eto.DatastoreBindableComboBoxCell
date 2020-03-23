@@ -5,26 +5,48 @@
 -->
 
 <Project>
+  
+  <!--
+      ADJUST THIS FOR NEW ETO RELEASES
+  -->
+  <PropertyGroup>
+    <EtoVersion Condition=" '$(EtoVersion)' == '' ">2.5.1-ci-20200323.6</EtoVersion>
+  </PropertyGroup>
+  
+  
   <PropertyGroup>
     <!-- Common props -->
     <PathMap>$(MSBuildProjectDirectory)=eto-datastorebindablecomboboxcell-src\$(MSBuildProjectName)</PathMap>
     <LangVersion>7.3</LangVersion>
 	<CodeAnalysisRuleSet>..\build_scripts\FPLedit.ruleset</CodeAnalysisRuleSet>
 
-	<!-- Output configuration -->
-	<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <!-- AssemblyInfo -->
+	<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Version>$(EtoVersion)</Version>
+    <Company>Manuel Huber</Company>
+    <Copyright>Copyright © 2019-2020 Manuel Huber</Copyright>
+    <Product>Eto.DsBindComboBoxCell</Product>
 
+    <!-- Output configuration -->
     <OutputPath Condition=" '$(ForceConfigurationDir)' == '' ">..\bin\$(Configuration)\</OutputPath>
     <OutputPath Condition=" '$(ForceConfigurationDir)' != '' ">..\bin\$(ForceConfigurationDir)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 
     <!-- Use common obj folder -->
-    <IntermediateOutputPath>..\obj\$(SolutionName)\$(MSBuildProjectName)\$(Configuration)\</IntermediateOutputPath>
+    <IntermediateOutputPath>..\obj\$(SolutionName)\$(MSBuildProjectName)\$(Configuration)\</IntermediateOutputPath>   
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageVersion>$(EtoVersion)</PackageVersion>
+    <Authors>Manuel Huber</Authors>
+    <PackageProjectUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/</PackageProjectUrl>
+    <Title>Eto.DsBindComboBoxCell</Title>
+    <PackageLicenseUrl>https://github.com/FPLedit/Eto.DsBindComboBoxCell/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
-	  <!-- Include VersionInfo -->
-	  <Compile Include="..\build_scripts\VersionInfo.cs" Link="Properties\VersionInfo.cs" />
+	  <!-- Include BuildFlags -->
 	  <Compile Condition=" Exists('..\build_tmp\BuildFlags.cs') "
           Include="..\build_tmp\BuildFlags.cs" Link="Properties\BuildFlags.cs" />
   </ItemGroup>
